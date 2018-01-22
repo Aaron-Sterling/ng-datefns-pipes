@@ -1,8 +1,9 @@
 # ng-datefns-pipes
 Angular pipes based on date-fns. Date pipe, time-ago pipe, minDate pipe, maxDate pipe, distanceBetweenDates pipe.
 
-Installation
-Sample usage
+[Installation](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/README.md#installation)
+
+[Sample usage]()
 Basic setup
 Advanced setup
 API
