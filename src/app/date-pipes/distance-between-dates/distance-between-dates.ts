@@ -5,7 +5,7 @@ import { isValidInput } from '../helper-functions';
 import { DatePipeManager } from '../providers/date-pipe-manager';
 
 /**
- * distance in words pipe
+ * distance in words pipe by Aaron Sterling
  * takes as input an array of two dates
  * outputs the value of the date-fns DistanceInWords function
  */

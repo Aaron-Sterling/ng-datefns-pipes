@@ -6,6 +6,8 @@ import { DistanceBetweenDatesPipe } from './distance-between-dates/distance-betw
 import { TimeAgoPipe } from './time-ago-pipe/time-ago-pipe';
 import { DatePipeManager, DATE_PIPE_CONFIGURATION_TOKEN, DatePipeConfiguration } from './providers/date-pipe-manager';
 
+// date pipe module by Aaron Sterling
+
 @NgModule({
     declarations: [ DatePipe,
                     MaxDatePipe,

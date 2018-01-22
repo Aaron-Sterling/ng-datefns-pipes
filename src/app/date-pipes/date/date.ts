@@ -3,6 +3,8 @@ import format from 'date-fns/format';
 import { parsedOutput } from '../helper-functions';
 import { DatePipeManager } from '../providers/date-pipe-manager';
 
+// Date Pipe by Aaron Sterling
+
 @Pipe({
   name: 'date',
 })

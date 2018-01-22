@@ -1,7 +1,7 @@
 import { Injectable, InjectionToken, Inject } from '@angular/core';
 import * as DefaultLocale from 'date-fns/locale/en';
 
-// DatePipe Manager
+// DatePipe Manager by Aaron Sterling
 // injection token
 export interface AgoPipeOptions {
     refreshRate?: number;
@@ -11,6 +11,7 @@ export interface AgoPipeOptions {
 }
 export interface DatePipeConfiguration {
     defaultDateFormat?: string;
+    dateDistanceIncludesSeconds?: boolean;
     agoPipeOptions?: AgoPipeOptions;
 }
 export const DATE_PIPE_CONFIGURATION_TOKEN = new InjectionToken<DatePipeConfiguration>('date pipe configuration');
@@ -18,6 +19,7 @@ export const DATE_PIPE_CONFIGURATION_TOKEN = new InjectionToken<DatePipeConfigur
 // default constants
 
 const INITIAL_DEFAULT_DATE_FORMAT = 'MMMM Do, YYYY';
+const DEFAULT_DATE_DISTANCE_INCLUDES_SECONDS = false;
 const DEFAULT_AGO_PIPE_OPTIONS: AgoPipeOptions = {
     refreshRate: 15000,
     prefix: '',
@@ -30,19 +32,31 @@ export class DatePipeManager {
 
     private dateFormat: string;
     private formatToRevertTo: string;
-    private includeSeconds = false;
+    private includeSeconds = DEFAULT_DATE_DISTANCE_INCLUDES_SECONDS;
     private agoPipeOptions = Object.assign({}, DEFAULT_AGO_PIPE_OPTIONS);
+    private optionsToRevertTo: AgoPipeOptions;
 
     // initialization
 
     constructor(@Inject(DATE_PIPE_CONFIGURATION_TOKEN) userProvidedConfig: DatePipeConfiguration) {
+        // set default date string
         if (userProvidedConfig && userProvidedConfig.defaultDateFormat) {
             this.initializeDefaultDateFormat(userProvidedConfig.defaultDateFormat);
         } else {
             this.initializeDefaultDateFormat(INITIAL_DEFAULT_DATE_FORMAT);
         }
+        // set default whether distance includes seconds
+        if (userProvidedConfig && userProvidedConfig.dateDistanceIncludesSeconds
+                               && userProvidedConfig.dateDistanceIncludesSeconds === true) {
+            this.includeSeconds = userProvidedConfig.dateDistanceIncludesSeconds;
+        } else if (userProvidedConfig && typeof userProvidedConfig.dateDistanceIncludesSeconds === 'boolean'
+                                      && userProvidedConfig.dateDistanceIncludesSeconds === false) {
+            this.includeSeconds = false;
+        }
+        // set ago pipe defaults
         if (userProvidedConfig && userProvidedConfig.agoPipeOptions) {
             this.agoPipeOptions = Object.assign({}, this.agoPipeOptions, userProvidedConfig.agoPipeOptions);
+            this.optionsToRevertTo = Object.assign({}, this.agoPipeOptions);
         }
     }
 
@@ -94,6 +108,6 @@ export class DatePipeManager {
     }
 
     resetAgoPipeOptions() {
-        this.agoPipeOptions = Object.assign({}, DEFAULT_AGO_PIPE_OPTIONS);
+        this.agoPipeOptions = Object.assign({}, this.optionsToRevertTo);
     }
 }

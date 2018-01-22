@@ -4,6 +4,8 @@ import format from 'date-fns/format';
 import { parsedOutput } from '../helper-functions';
 import { DatePipeManager } from '../providers/date-pipe-manager';
 
+// min date pipe by Aaron Sterling
+
 @Pipe({
   name: 'minDate',
 })
