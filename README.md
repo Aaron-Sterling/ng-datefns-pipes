@@ -98,7 +98,7 @@ export class AppModule {}
 
 1. [Date pipe](docs/api/date-pipe.md)
 2. Time ago pipe
-3. Distance between dates pipe
-4. MaxDate pipe
-5. MinDate pipe
+3. [Distance between dates pipe](docs/api/distance-between-dates-pipe.md)
+4. [MaxDate pipe](docs/api/max-date-pipe.md)
+5. [MinDate pipe](docs/api/min-date-pipe.md)
 6. DatePipeManager
