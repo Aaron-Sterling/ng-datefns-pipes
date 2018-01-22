@@ -1,5 +1,5 @@
 # ng-datefns-pipes
-Angular pipes based on date-fns. Date pipe, time-ago pipe, minDate pipe, maxDate pipe, distanceBetweenDates pipe.
+Angular pipes based on date-fns. Date pipe, time-ago pipe, minDate pipe, maxDate pipe, distanceBetweenDates pipe. I initially built these for Ionic projects, because the Angular date pipe was not performing well on all mobile devices, and the date-fns functions were not exhibiting problems. However, no use of Ionic is required. This npm library should work with any Angular 5 project, and any Ionic 3 project.
 
 1. [Installation](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/README.md#installation)
 2. [Sample usage](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/README.md#sample-usage)
