@@ -95,7 +95,7 @@ export class AppModule {}
 ```
 
 ## API
-Date pipe
+[Date pipe](docs/api/date-pipe.md)
 Time ago pipe
 Distance between dates pipe
 MaxDate pipe
