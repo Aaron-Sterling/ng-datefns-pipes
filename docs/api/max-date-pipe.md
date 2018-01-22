@@ -1,6 +1,6 @@
 # MaxDate pipe API
 
-The MaxDate pipe selects the most recent date from an array of dates by using the [date-fns ```min``` function](https://date-fns.org/v1.29.0/docs/min).
+The MaxDate pipe selects the most recent date from an array of dates by using the [date-fns ```max``` function](https://date-fns.org/v1.29.0/docs/max).
 
 ## Syntax
 
