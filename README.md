@@ -66,6 +66,7 @@ export class AppModule {}
 This gives you access to all the (English language) date pipes, with the default configuration. For details, see the API below.
 ## Advanced Setup
 You can specify a default date format; whether date distance functions include seconds; and the prefix, suffix, refresh rate and use of seconds of the timeAgo pipe. (For more detail about these settings, see the API below. You can also set and reset each setting during the program by injecting the DatePipeManager.)
+
 In ```app.module.ts```:
 ```
 import { DatePipesModule, DatePipeConfiguration } from 'ng-datefns-pipes';
