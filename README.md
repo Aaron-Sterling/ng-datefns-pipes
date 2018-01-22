@@ -71,7 +71,7 @@ In ```app.module.ts```:
 ```
 import { DatePipesModule, DatePipeConfiguration } from 'ng-datefns-pipes';
 
-const DATE_PIPE_CONFIG = {
+const DATE_PIPE_CONFIG: DatePipeConfiguration = {
    defaultDateFormat: 'your date format string',    // default: 'MMMM Do, YYYY'
    dateDistanceIncludesSeconds: your boolean here,  // default: false
    agoPipeOptions: {
