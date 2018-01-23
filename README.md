@@ -8,7 +8,14 @@ Angular pipes based on date-fns. Date pipe, time-ago pipe, minDate pipe, maxDate
 5. [API](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/README.md#api)
 
 ## Installation
+
+English locale:
+
 ```npm install ng-datefns-pipes --save```
+
+Support for all date-fns locales:
+
+```npm install ng-datefns-pipes-all-locales --save```
 
 ## Sample usage
 Date pipe:
