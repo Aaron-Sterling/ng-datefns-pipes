@@ -1,6 +1,17 @@
 {
   "name": "ng-datefns-pipes",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "author": {
+    "name": "Aaron Sterling",
+    "email": "sterling@iastate.edu"
+  },
+  "homepage": "https://github.com/Aaron-Sterling/ng-datefns-pipes",
+  "bugs": "https://github.com/Aaron-Sterling/ng-datefns-pipes/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aaron-Sterling/ng-datefns-pipes"
+  },
+  "description": "Angular pipes based on date-fns. Date pipe, time-ago pipe, minDate pipe, maxDate pipe, distanceBetweenDates pipe.",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -13,15 +24,8 @@
   },
   "private": false,
   "dependencies": {
-    "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
-    "@angular/compiler": "^5.2.0",
     "@angular/core": "^5.2.0",
-    "@angular/forms": "^5.2.0",
-    "@angular/http": "^5.2.0",
-    "@angular/platform-browser": "^5.2.0",
-    "@angular/platform-browser-dynamic": "^5.2.0",
-    "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "date-fns": "^1.29.0",
     "rxjs": "^5.5.6",
@@ -54,5 +58,18 @@
     "lib": {
       "entryFile": "public_api.ts"
     }
-  }
+  },
+  "keywords": [
+    "ago",
+    "angular",
+    "date",
+    "date-distance",
+    "date-fns",
+    "date-pipe",
+    "ionic",
+    "max-date",
+    "min-date",
+    "pipe",
+    "time-ago"
+  ]
 }
