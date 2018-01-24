@@ -1,5 +1,7 @@
 # Non-English locales
 
+Previous page: [English setup and Advanced Setup](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/README.md)
+
 ## Installation
 ```npm install ng-datefns-pipes-all-locales --save```
 
@@ -82,3 +84,5 @@ export function getLocale(locale: Locale) {
     return localeMap.get(locale);
 }
 ```
+
+Previous page: [English setup and Advanced Setup](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/README.md)
