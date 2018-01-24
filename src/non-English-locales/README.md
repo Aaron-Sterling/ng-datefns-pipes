@@ -63,7 +63,7 @@ Reverts the default locale to whatever was set as the default during startup (i.
 
 There are over 30 locales supported. You may need this for your application, but you may only need one or two, and want to reduce code bloat. The library is structured so you only have to modify one file to do this.
 
-After installing the library, open your project's node_modules and find the installed copy of ```locale-map.ts```.  It should look [like this](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/src/non-English-locales/src/app/date-pipes/providers/locale-manager/locale-map.ts).
+Manually install the libary from Github and change your copy of ```locale-map.ts```.  It starts out looking [like this](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/src/non-English-locales/src/app/date-pipes/providers/locale-manager/locale-map.ts).
 
 Remove imports and entries to ```localeArray``` until only your desired locales remain. The following code provides support for only the English and Spanish locales.
 
