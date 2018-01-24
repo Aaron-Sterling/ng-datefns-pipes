@@ -7,6 +7,8 @@ Angular pipes based on date-fns. Date pipe, time-ago pipe, minDate pipe, maxDate
 4. [Advanced setup](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/README.md#advanced-setup)
 5. [API](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/README.md#api)
 
+Next page: [Non-English locales](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/src/non-English-locales/README.md)
+
 ## Installation
 
 English locale:
@@ -108,3 +110,5 @@ export class AppModule {}
 3. [Distance between dates pipe](docs/api/distance-between-dates-pipe.md)
 4. [MaxDate pipe](docs/api/max-date-pipe.md)
 5. [MinDate pipe](docs/api/min-date-pipe.md)
+
+Next page: [Non-English locales](https://github.com/Aaron-Sterling/ng-datefns-pipes/blob/master/src/non-English-locales/README.md)
