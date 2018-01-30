@@ -10,7 +10,7 @@ You can specify a default date format; whether date distance functions include s
 
 In ```app.module.ts```:
 ```
-import { DatePipesModule, DatePipeConfiguration, Locale } from 'ng-datefns-pipes';
+import { DatePipesModule, DatePipeConfiguration, Locale } from 'ng-datefns-pipes-all-locales';
 
 const DATE_PIPE_CONFIG: DatePipeConfiguration = {
    defaultDateFormat: 'your date format string',    // default: 'MMMM Do, YYYY'
